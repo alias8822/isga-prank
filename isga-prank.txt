@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>تست شخصیت خیلی مهم 🤫</title>
+  <style>
+    body { font-family: sans-serif; direction: rtl; background:#f5f5f5; padding:40px; }
+    .card { max-width:400px; margin:auto; background:white; padding:25px; border-radius:12px;
+            box-shadow:0 4px 20px rgba(0,0,0,.1); text-align:center; }
+    input, button {
+      width:100%; padding:10px; margin-top:10px; border-radius:8px; border:1px solid #aaa;
+      font-size:16px;
+    }
+    button { background:#4caf50; color:white; border:none; cursor:pointer; }
+    button:hover { background:#3a9c45; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>تست شخصیت خیلی مهم 😳</h2>
+  <p>لطفاً اطلاعات زیر را وارد کنید:</p>
+
+  <input id="name" placeholder="اسم شما">
+  <input id="height" placeholder="قد شما">
+
+  <button onclick="showResult()">مشاهده نتیجه</button>
+
+  <p id="result" style="margin-top:20px; font-size:18px; font-weight:bold;"></p>
+</div>
+
+<script>
+function showResult() {
+  let n = document.getElementById('name').value.trim();
+  let h = document.getElementById('height').value.trim();
+
+  if(!n || !h) {
+    document.getElementById('result').textContent = "لطفاً همه‌ی موارد را وارد کن 🙄";
+    return;
+  }
+
+  document.getElementById('result').textContent =
+    "اطلاعات با موفقیت ثبت شد ✔️ شما کاملاً یک دختر هستید! 👧😂";
+}
+</script>
+
+</body>
+</html>
